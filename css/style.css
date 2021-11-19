@@ -2,3 +2,215 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    width: 375px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header {
+    width: 100%;
+    max-width: 375px;
+    height: 80px;
+
+    padding: 0 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    width: 75px;
+    height: 53px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.users ion-icon {
+    font-size: 40px;
+}
+
+aside {
+    width: 259px;
+    height: 860px;
+
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+
+    background-color: #fff;
+}
+
+aside span {
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+aside ion-icon:first-child {
+    font-size: 25px;
+}
+
+aside ion-icon:last-child {
+    font-size: 15px;
+    font-weight: bolder;
+
+    color: green;
+
+    justify-content: right;
+}
+
+aside .contact, .visibility {
+    width: 100%;
+}
+
+aside p {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 8px;
+}
+
+aside .contact, .visibility {
+    padding: 0 20px;
+}
+
+aside .contact div, .visibility div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 375px;
+    height: 800px;
+
+    margin-top: 80px;
+    padding-top: 20px;
+
+    background: #F3F3F3;
+
+    position: relative;
+
+    overflow-wrap: break-word;
+}
+
+main .container {
+    width: 100%;
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.container .enter {
+    width: 100%;
+    padding: 10px;
+    background-color: #DCDCDC;
+}
+
+.container .normalMessage {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.container .privateMessage {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFDEDE;
+}
+
+.container .exit {
+    width: 100%;
+    padding: 10px;
+    background-color: #DCDCDC;
+}
+
+.container .time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #aaa;
+}
+
+.container .sender {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000;
+}
+
+.container .receiver {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000;
+}
+
+.container .message {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    max-width: 375px;
+    height: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+
+    position: fixed;
+    bottom: 0;
+}
+footer input {
+    width: 100%;
+
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+
+    outline-style: none;
+    border-style: none;
+}
+footer .send {
+    font-size: 30px;
+
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    
+}

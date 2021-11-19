@@ -11,15 +11,113 @@
 
     <link rel="shortcut icon" href="/assets/favicon.ico">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Bate Papo UOL</title>
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <img src="/assets/img/logo 1.png" alt="logo_UOL">
+        </div>
+        <div class="users" onclick="callSideBar">
+            <ion-icon name="people"></ion-icon>
+        </div>
+        <aside>
+            <span>Escolha um contato<br>para enviar mensagem:</span>
+            <div class="contact">
 
+                <div class="everyone">
+                    <ion-icon name="people"></ion-icon>
+                    <p>Todos</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div class="user1">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <p>João</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div class="user2">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <p>Maria</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+            </div>
+            <span>Escolha a visibilidade:</span>
+            <div class="visibility">
+
+                <div class="public">
+                    <ion-icon name="lock-open"></ion-icon>
+                    <p>Público</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div class="private">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <p>Reservadamente</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+            </div>
+        </aside>
+    </header>
+
+
+
+    <main>
+
+        <div class="container">
+            <div class="enter">
+                <span class="time">(09:21:45)</span>
+                <span class="sender"><strong>João</strong></span>
+                <span class="message">entra na sala...</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="normalMessage">
+                <span class="time">(09:21:45)</span>
+                <span class="sender"><strong>João</strong></span>
+                <span class="receiver">para <strong>Todos</strong></span>
+                <span class="message">Bom dia</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="normalMessage">
+                <span class="time">(09:21:45)</span>
+                <span class="sender"><strong>Maria</strong></span>
+                <span class="receiver">para <strong>João</strong></span>
+                <span class="message">Oi João :)</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="privateMessage">
+                <span class="time">(09:21:45)</span>
+                <span class="sender"><strong>João</strong></span>
+                <span class="receiver">reservadamente para <strong>Maria</strong></span>
+                <span class="message">Oi gatinha quer tc?</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="exit">
+                <span class="time">(09:21:45)</span>
+                <span class="sender"><strong>Maria</strong></span>
+                <span class="message">sai da sala...</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="sendMessage">
+        <input type="text" class="message" placeholder="Escreva aqui...">
+
+        <div class="send">
+            <ion-icon name="paper-plane-outline" data-identifier="send-message"></ion-icon>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/script.js"></script>
+
 </body>
 
 </html>
