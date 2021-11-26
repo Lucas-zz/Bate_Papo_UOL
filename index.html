@@ -33,37 +33,34 @@
                 <span class="sender"><strong>João</strong></span>
                 <span class="message">entra na sala...</span>
             </div>
-        </div>
-        <div class="container">
+
             <div class="normalMessage">
                 <span class="time">(09:21:45)</span>
                 <span class="sender"><strong>João</strong></span>
                 <span class="receiver">para <strong>Todos</strong></span>
                 <span class="message">Bom dia</span>
             </div>
-        </div>
-        <div class="container">
+
             <div class="normalMessage">
                 <span class="time">(09:21:45)</span>
                 <span class="sender"><strong>Maria</strong></span>
                 <span class="receiver">para <strong>João</strong></span>
                 <span class="message">Oi João :)</span>
             </div>
-        </div>
-        <div class="container">
+
             <div class="privateMessage">
                 <span class="time">(09:21:45)</span>
                 <span class="sender"><strong>João</strong></span>
                 <span class="receiver">reservadamente para <strong>Maria</strong></span>
                 <span class="message">Oi gatinha quer tc?</span>
             </div>
-        </div>
-        <div class="container">
+
             <div class="exitChat">
                 <span class="time">(09:21:45)</span>
                 <span class="sender"><strong>Maria</strong></span>
                 <span class="message">sai da sala...</span>
             </div>
+
         </div>
     </main>
 
@@ -77,37 +74,41 @@
         </button>
     </footer>
 
-    <!-- <aside class="menu noDisplay">
+    <aside class="menu noDisplay">
         <span>Escolha um contato<br>para enviar mensagem:</span>
-        <div class="contact">
-
-            <div class="everyone">
+        <div class="contacts">
+            <div class="contact selected">
                 <ion-icon name="people"></ion-icon>
                 <p>Todos</p>
-                <ion-icon name="checkmark-outline"></ion-icon>
+                <ion-icon class="check" name="checkmark-outline"></ion-icon>
             </div>
-            <div class="user1">
+            <div class="contact">
                 <ion-icon name="person-circle-outline"></ion-icon>
                 <p>João</p>
-                <ion-icon name="checkmark-outline"></ion-icon>
+                <ion-icon class="check" name="checkmark-outline"></ion-icon>
             </div>
-            <div class="user2">
+            <div class="contact">
                 <ion-icon name="person-circle-outline"></ion-icon>
                 <p>Maria</p>
-                <ion-icon name="checkmark-outline"></ion-icon>
+                <ion-icon class="check" name="checkmark-outline"></ion-icon>
             </div>
         </div>
+
         <span>Escolha a visibilidade:</span>
         <div class="visibility">
 
-            <div class="public">
-                <ion-icon name="lock-open"></ion-icon>Público<ion-icon name="checkmark-outline"></ion-icon>
+            <div class="public selected">
+                <ion-icon name="lock-open"></ion-icon>
+                <p>Público</p>
+                <ion-icon class="check" name="checkmark-outline"></ion-icon>
             </div>
             <div class="private">
-                <ion-icon name="lock-closed"></ion-icon>Reservadamente<ion-icon name="checkmark-outline"></ion-icon>
+                <ion-icon name="lock-closed"></ion-icon>
+                <p>Reservadamente</p>
+                <ion-icon class="check" name="checkmark-outline"></ion-icon>
             </div>
         </div>
-    </aside> -->
+    </aside>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
