@@ -1,4 +1,4 @@
-# Projeto_05_BatePapoUOL
+# Bate Papo UOL
 
 5th project from the full-stack developer course at Driven Education
 
