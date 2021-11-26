@@ -21,49 +21,14 @@
     <div class="asideMenu noDisplay" onclick="toggleMenu()"></div>
 
     <header>
-        <div class="logo">
-            <img src="/assets/img/logo 1.png" alt="logo_UOL">
-        </div>
-        <div class="users" onclick="callSideBar">
-            <ion-icon name="people" onclick="toggleMenu()"></ion-icon>
-        </div>
-        <aside class="menu noDisplay">
-            <span>Escolha um contato<br>para enviar mensagem:</span>
-            <div class="contact">
-
-                <div class="everyone">
-                    <ion-icon name="people"></ion-icon>
-                    <p>Todos</p>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="user1">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                    <p>João</p>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="user2">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                    <p>Maria</p>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-            </div>
-            <span>Escolha a visibilidade:</span>
-            <div class="visibility">
-
-                <div class="public">
-                    <ion-icon name="lock-open"></ion-icon>Público<ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-                <div class="private">
-                    <ion-icon name="lock-closed"></ion-icon>Reservadamente<ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-            </div>
-        </aside>
+        <img src="/assets/img/logo 1.png" alt="logo_UOL">
+        <ion-icon name="people-sharp" onclick="toggleMenu()"></ion-icon>
     </header>
 
     <main>
 
         <div class="container">
-            <div class="enter">
+            <div class="enterChat">
                 <span class="time">(09:21:45)</span>
                 <span class="sender"><strong>João</strong></span>
                 <span class="message">entra na sala...</span>
@@ -94,7 +59,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="exit">
+            <div class="exitChat">
                 <span class="time">(09:21:45)</span>
                 <span class="sender"><strong>Maria</strong></span>
                 <span class="message">sai da sala...</span>
@@ -102,13 +67,48 @@
         </div>
     </main>
 
-    <footer class="sendMessage">
-        <input type="text" class="message" placeholder="Escreva aqui...">
-
-        <div class="send">
-            <ion-icon name="paper-plane-outline" data-identifier="send-message"></ion-icon>
+    <footer>
+        <div class="sendMessage">
+            <input placeholder="Escreva aqui..." class="inputMessage"></input>
+            <span class="sending">Enviando para Todos</span>
         </div>
+        <button onclick="sendMessage()" data-identifier="send-message">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </button>
     </footer>
+
+    <!-- <aside class="menu noDisplay">
+        <span>Escolha um contato<br>para enviar mensagem:</span>
+        <div class="contact">
+
+            <div class="everyone">
+                <ion-icon name="people"></ion-icon>
+                <p>Todos</p>
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+            <div class="user1">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <p>João</p>
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+            <div class="user2">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <p>Maria</p>
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+        </div>
+        <span>Escolha a visibilidade:</span>
+        <div class="visibility">
+
+            <div class="public">
+                <ion-icon name="lock-open"></ion-icon>Público<ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+            <div class="private">
+                <ion-icon name="lock-closed"></ion-icon>Reservadamente<ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+        </div>
+    </aside> -->
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
