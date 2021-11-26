@@ -11,21 +11,23 @@
 
     <link rel="shortcut icon" href="/assets/favicon.ico">
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <title>Bate Papo UOL</title>
 </head>
 
 <body>
+    <div class="asideMenu noDisplay" onclick="toggleMenu()"></div>
+
     <header>
         <div class="logo">
             <img src="/assets/img/logo 1.png" alt="logo_UOL">
         </div>
         <div class="users" onclick="callSideBar">
-            <ion-icon name="people"></ion-icon>
+            <ion-icon name="people" onclick="toggleMenu()"></ion-icon>
         </div>
-        <aside>
+        <aside class="menu noDisplay">
             <span>Escolha um contato<br>para enviar mensagem:</span>
             <div class="contact">
 
@@ -49,20 +51,14 @@
             <div class="visibility">
 
                 <div class="public">
-                    <ion-icon name="lock-open"></ion-icon>
-                    <p>Público</p>
-                    <ion-icon name="checkmark-outline"></ion-icon>
+                    <ion-icon name="lock-open"></ion-icon>Público<ion-icon name="checkmark-outline"></ion-icon>
                 </div>
                 <div class="private">
-                    <ion-icon name="lock-closed"></ion-icon>
-                    <p>Reservadamente</p>
-                    <ion-icon name="checkmark-outline"></ion-icon>
+                    <ion-icon name="lock-closed"></ion-icon>Reservadamente<ion-icon name="checkmark-outline"></ion-icon>
                 </div>
             </div>
         </aside>
     </header>
-
-
 
     <main>
 
@@ -116,7 +112,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
