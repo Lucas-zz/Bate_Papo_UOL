@@ -1,9 +1,9 @@
 # Projeto_05_BatePapoUOL
 
-Projeto 05 do curso de desenvolvimento full-stack da Driven Education
+5th project from the full-stack developer course at Driven Education
 
-Chat de bate papo com temática do UOL desenvolvido em HTML, CSS, Javascript e com a utilização de uma API para armazenamento e direcionamento de mensagens.
+Chat room from 'UOL' developed in HTML, CSS, Javascript and with the usage of an API which stores and directs the messages
 
-Deploy parcial: https://lucas-zz.github.io/Projeto_05_BatePapoUOL/
+Partial deploy: https://lucas-zz.github.io/Projeto_05_BatePapoUOL/
 
 Programming by Lucas-zz
